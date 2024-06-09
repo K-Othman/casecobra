@@ -22,6 +22,7 @@ export default function Home() {
                 CaseCobra allows you to protext your memories, not just your
                 phone.
               </p>
+              <ul className="mt-8"></ul>
             </div>
           </div>
         </MaxWidthWrapper>
