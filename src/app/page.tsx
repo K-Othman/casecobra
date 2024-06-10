@@ -1,4 +1,5 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { Check } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -22,7 +23,51 @@ export default function Home() {
                 CaseCobra allows you to protext your memories, not just your
                 phone.
               </p>
-              <ul className="mt-8"></ul>
+              <ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start">
+                <div className="space-y-2">
+                  <li className="flex gap-1.5 items-center text-left">
+                    <Check className="h-5 w-5 shrink-0 text-gray-600" />
+                    High-quality, durable material
+                  </li>
+                  <li className="flex gap-1.5 items-center text-left">
+                    <Check className="h-5 w-5 shrink-0 text-gray-600" />5 year
+                    print guranatee
+                  </li>
+                  <li className="flex gap-1.5 items-center text-left">
+                    <Check className="h-5 w-5 shrink-0 text-gray-600" />
+                    Modern iphone models supported
+                  </li>
+                </div>
+              </ul>
+              <div className="mt-12 flex flex-col sm:flex-row items-center sm:items-start gap-5">
+                <div className="flex -space-x-4">
+                  <img
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
+                    src="/users/user-1.png"
+                    alt="user image"
+                  />
+                  <img
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
+                    src="/users/user-2.png"
+                    alt="user image"
+                  />
+                  <img
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
+                    src="/users/user-3.png"
+                    alt="user image"
+                  />
+                  <img
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
+                    src="/users/user-4.jpg"
+                    alt="user image"
+                  />
+                  <img
+                    className="inline-block object-cover h-10 w-10 rounded-full ring-2 ring-slate-100"
+                    src="/users/user-5.jpg"
+                    alt="user image"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </MaxWidthWrapper>
