@@ -67,6 +67,7 @@ export default function Home() {
                     alt="user image"
                   />
                 </div>
+                <div className="flex flex-col justify-between items-center sm:items-center"></div>
               </div>
             </div>
           </div>
