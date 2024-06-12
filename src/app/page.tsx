@@ -1,5 +1,5 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Check } from "lucide-react";
+import { Check, Star } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,10 +10,14 @@ export default function Home() {
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="absolute w-28 left-0 -top-20 hidden lg:block">
-                <img src="/snake-1.png" className="w-full" />
+                <img
+                  src="/snake-1.png"
+                  className="w-full"
+                  alt="casecobra main logo"
+                />
               </div>
               <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
-                You Image on a{" "}
+                Your Image on a{" "}
                 <span className="bg-green-600 px-2 text-white">Custom</span>
                 Phone Case
               </h1>
@@ -67,7 +71,18 @@ export default function Home() {
                     alt="user image"
                   />
                 </div>
-                <div className="flex flex-col justify-between items-center sm:items-center"></div>
+                <div className="flex flex-col justify-between items-center sm:items-start">
+                  <div className="flex gap-0.5">
+                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
+                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
+                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
+                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
+                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
+                  </div>
+                  <p>
+                    <span className="font-semibold">1.250</span> happy customers
+                  </p>
+                </div>
               </div>
             </div>
           </div>
