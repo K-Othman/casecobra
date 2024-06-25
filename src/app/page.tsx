@@ -1,7 +1,7 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Check, Star } from "lucide-react";
 import Phone from "@/components/Phone";
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/Icons";
 
 export default function Home() {
   return (
@@ -117,6 +117,20 @@ export default function Home() {
               </span>{" "}
               say
             </h2>
+            <img
+              src="/snake-2.png"
+              alt="sanke icon"
+              className="w-24 order-0 lg:order-2"
+            />
+          </div>
+          <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-2-none lg:grid-cols-2 gap-y-16">
+            <div className="flex gap-0.5 mb-2">
+              <Star className="h-5 w-5 text-green-600 fill-green-600" />
+              <Star className="h-5 w-5 text-green-600 fill-green-600" />
+              <Star className="h-5 w-5 text-green-600 fill-green-600" />
+              <Star className="h-5 w-5 text-green-600 fill-green-600" />
+              <Star className="h-5 w-5 text-green-600 fill-green-600" />
+            </div>
           </div>
         </MaxWidthWrapper>
       </section>
