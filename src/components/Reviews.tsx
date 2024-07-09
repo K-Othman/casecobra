@@ -130,6 +130,18 @@ const ReviewGrid = () => {
             }
             msPerPixel={10}
           />
+          <ReviewColumn
+            reviews={[...columns1, ...columns3.flat(), ...columns2]}
+            className="hidden md:block"
+            reviewClassName={(reviewIndex) =>
+              cn({
+                "md:hidden":
+                  reviewIndex >= columns1.length + columns3[0].length,
+                "lg:hidden": reviewIndex >= columns1.length,
+              })
+            }
+            msPerPixel={15}
+          />
         </>
       ) : null}
     </div>
