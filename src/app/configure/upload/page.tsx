@@ -23,7 +23,23 @@ const page = () => {
         <Dropzone
           onDropRejected={onDropRejected}
           onDropAccepted={onDropAccepted}
-        ></Dropzone>
+          accept={{
+            "image/png": [".png"],
+            "image/jpeg": [".jpeg"],
+            "image/jpg": [".jpg"],
+          }}
+          onDragEnter={() => setIsDragOver(true)}
+          onDragOver={() => setIsDragOver(false)}
+        >
+          {({ getRootProps, getInputProps }) => (
+            <div
+              className="h-full w-full flex-1 flex flex-col items-center justify-center"
+              {...getRootProps()}
+            >
+              <input {...getInputProps()} />
+            </div>
+          )}
+        </Dropzone>
       </div>
     </div>
   );
