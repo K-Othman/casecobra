@@ -8,7 +8,9 @@ const page = () => {
   const [isDragOver, setIsDragOver] = useState<boolean>(false);
 
   const onDropRejected = () => {};
-  const onDropAccepted = () => {};
+  const onDropAccepted = () => {
+    console.log("accepted");
+  };
 
   return (
     <div
