@@ -21,7 +21,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         <main className="flex flex-col min-h-[calc(100vh-3.5-1px)]">
-          <div className="flex-1 flex flex-col h-full">{children}</div>
+          <div className="flex-1 flex flex-col h-full">
+            <div className="flex-1 flex flex-col h-full"></div>
+            {children}
+          </div>
           <Footer />
         </main>
       </body>
